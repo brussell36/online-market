@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Flower Market</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to our flower shop!</h1>
+      <img src="https://assets.eflorist.com/assets/products/PHR_/T282-9A.jpg" alt="Rainbow bouquet">
+    </div>
+    <div class="row">
+      <form id="flowerform" class="form-group">
+      <div class="col-md-4">
+        <h3>What kind of flowers would you like?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flowers" value="peonies">
+            Peonies
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flowers" value="roses">
+            Roses
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flowers" value="poppies">
+            Poppies
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flowers" value="lavender">
+            Lavender
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flowers" value="carnation">
+            Carnations
+          </label>
+        </div>
+      
+      </div>
+      <div class="col-md-4">
+        <h3>What kind of vase would you like?</h3>
+        <div class="form-group">
+          <label for="vase-type">Choose your style</label>
+          <select class="form-control" id="vase">
+            <option>Porcelain</option>
+            <option>Clay</option>
+            <option>Glass</option>
+            <option>Concrete</option>          
+          </select>            
+        </div>
+        <div class="form-group">
+          <label for="color">What color would you like?</label>
+          <input type="color" class="form-control" id="vase-color">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>When you you like them delivered?</h3>
+        <div class="form-group">
+          <label for="date">Choose a date</label>
+          <input type="date" class="form-control" id="delivery-date">
+        </div>
+      </div>
+    </form>
+      <button type="submit" class="btn btn-lg-success">Submit</button>
+  </div>
+</body>
+</html>
